@@ -125,7 +125,7 @@ describe "Authentication" do
 
 			describe "submitting a DELETE request tot the Users#destroy action" do
 				before { delete user_path(user) }
-				specify {response.should redirect_to(root_path) }
+				specify { response.should redirect_to(root_path) }
 			end
 		end
 	end
